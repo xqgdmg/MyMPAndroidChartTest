@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initListener() {
         tvLineChart.setOnClickListener(this);
+        tvBarChart.setOnClickListener(this);
+        tvPieChart.setOnClickListener(this);
     }
 
     private void initView() {
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this,LineChartActivity.class));
                 break;
             case R.id.tvBarChart:
-                startActivity(new Intent(MainActivity.this,LineChartActivity.class));
+                startActivity(new Intent(MainActivity.this,BarChartActivity.class));
                 break;
             case R.id.tvPieChart:
                 startActivity(new Intent(MainActivity.this,LineChartActivity.class));

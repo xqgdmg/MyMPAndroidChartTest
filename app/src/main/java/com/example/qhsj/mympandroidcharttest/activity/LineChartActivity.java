@@ -186,8 +186,8 @@ public class LineChartActivity extends AppCompatActivity {
 
         l.setForm(Legend.LegendForm.LINE);
 
-        mChart.setVisibleXRange(0,60); // 显示部分数据.实现显示部分数据
-        mChart.centerViewTo(20, 50, YAxis.AxisDependency.LEFT);
+        mChart.setVisibleXRange(0,60); // 显示部分数据.自动会可以移动
+//        mChart.centerViewTo(20, 50, YAxis.AxisDependency.LEFT);
 
         // 表格的所有设置重新配置之后，都要调用这个方法
         // mChart.invalidate();
