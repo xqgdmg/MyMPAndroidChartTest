@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.qhsj.mympandroidcharttest.MainActivity">
+
+    <TextView
+        android:id="@+id/tvLineChart"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="#5500ff00"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="线状图" />
+
+    <TextView
+        android:id="@+id/tvBarChart"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="#55000ff0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="柱状图" />
+
+    <TextView
+        android:id="@+id/tvPieChart"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="#550ff0ff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="饼状图" />
+
+</LinearLayout>
