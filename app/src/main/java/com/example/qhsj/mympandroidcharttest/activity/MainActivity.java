@@ -8,6 +8,10 @@ import android.widget.TextView;
 
 import com.example.qhsj.mympandroidcharttest.R;
 
+/*
+ * 1：看github 上面的 wiki
+ * 2：下载github 上面的 javaDoc
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView tvLineChart;
