@@ -13,7 +13,6 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
@@ -117,8 +116,10 @@ public class BarChartActivity extends AppCompatActivity {
 //        mv.setChartView(mChart); // For bounds control
 //        mChart.setMarker(mv); // Set the marker to the chart
 
-
         setData(12, 50);
+
+         // 一定要在 setData 之后调用
+        mChart.setVisibleXRange(0,5); // 显示部分数据.自动会可以移动
 
         // mChart.setDrawLegend(false);
     }
@@ -144,9 +145,7 @@ public class BarChartActivity extends AppCompatActivity {
         }
 
         BarDataSet barDataSet;
-
-        if (mChart.getData() != null &&
-                mChart.getData().getDataSetCount() > 0) {
+        if (mChart.getData() != null && mChart.getData().getDataSetCount() > 0) {
             barDataSet = (BarDataSet) mChart.getData().getDataSetByIndex(0);
             barDataSet.setValues(yVals1);
             mChart.getData().notifyDataChanged();
