@@ -1,4 +1,4 @@
-package com.example.qhsj.mympandroidcharttest;
+package com.example.qhsj.mympandroidcharttest.activity;
 
 import android.graphics.Color;
 import android.graphics.DashPathEffect;
@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
+import com.example.qhsj.mympandroidcharttest.R;
 import com.example.qhsj.mympandroidcharttest.utils.MyCustomFormatter;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Legend;
