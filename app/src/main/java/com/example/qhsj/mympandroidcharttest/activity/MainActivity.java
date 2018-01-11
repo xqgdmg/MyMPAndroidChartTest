@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tvLineChart;
     private TextView tvBarChart;
     private TextView tvPieChart;
+    private TextView tvCandleStickChart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +32,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvLineChart.setOnClickListener(this);
         tvBarChart.setOnClickListener(this);
         tvPieChart.setOnClickListener(this);
+        tvCandleStickChart.setOnClickListener(this);
     }
 
     private void initView() {
         tvLineChart = (TextView) findViewById(R.id.tvLineChart);
         tvBarChart = (TextView) findViewById(R.id.tvBarChart);
         tvPieChart = (TextView) findViewById(R.id.tvPieChart);
+        tvCandleStickChart = (TextView) findViewById(R.id.tvCandleStickChart);
     }
 
     @Override
@@ -50,6 +53,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tvPieChart:
                 startActivity(new Intent(MainActivity.this,PieChartActivity.class));
+                break;
+            case R.id.tvCandleStickChart:
+                startActivity(new Intent(MainActivity.this,CandleStickChartActivity.class));
                 break;
         }
     }

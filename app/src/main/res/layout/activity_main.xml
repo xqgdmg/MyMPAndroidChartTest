@@ -33,4 +33,13 @@
         android:layout_height="50dp"
         android:text="饼状图" />
 
+    <TextView
+        android:id="@+id/tvCandleStickChart"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="#5500ff00"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="蜡烛图" />
+
 </LinearLayout>
