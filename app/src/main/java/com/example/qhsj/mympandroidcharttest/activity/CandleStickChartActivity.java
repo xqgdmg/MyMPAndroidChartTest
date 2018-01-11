@@ -65,7 +65,7 @@ public class CandleStickChartActivity extends DemoBase implements OnSeekBarChang
 
         XAxis xAxis = mChart.getXAxis();
         xAxis.setPosition(XAxisPosition.BOTTOM);
-        xAxis.setDrawGridLines(false);
+        xAxis.setDrawGridLines(true);
 
         YAxis leftAxis = mChart.getAxisLeft();
 //        leftAxis.setEnabled(false);
@@ -78,8 +78,8 @@ public class CandleStickChartActivity extends DemoBase implements OnSeekBarChang
 //        rightAxis.setStartAtZero(false);
 
         // setting data
-        mSeekBarX.setProgress(40);
-        mSeekBarY.setProgress(100);
+        mSeekBarX.setProgress(13);
+        mSeekBarY.setProgress(50);
 
         mChart.getLegend().setEnabled(false);
     }
